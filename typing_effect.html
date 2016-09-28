@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/typing_effect.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
+    <script type="text/javascript" src="scripts/typing_effect.js"></script>
+	<title>eyetraining</title>
+</head>
+
+<body ng-controller="myCtrl">
+    <div id="typing_gif" ng-show="typingswitch1"><img src="images/typing.gif" ng-click="switchtyping(false)"/></div>
+
+    <div id="letter_board" style="background:url(images/letter.jpg) no-repeat center" ng-show="typingswitch2">
+        <div id="bubble_dummylayer"><div id="bubble_layer"></div></div>
+        <div id="letter_body"></div>
+        <div id="inputbeauty_image"><img src="images/ashiato.gif" style="width:100%"/></div>
+        <button id="quittypingbtn" class="btn btn-success" ng-click="switchtyping(true)">Quit</button>
+        <div id="letter_input" class="form-group"><input class="form-control" type="text" name="name" placeholder="Input some words here" ng-keydown="writeletter($event)"></div>
+    </div>
+</body>
+</html>

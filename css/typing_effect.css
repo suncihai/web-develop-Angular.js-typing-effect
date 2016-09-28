@@ -1,0 +1,56 @@
+#typing_gif{
+	width:1400px;
+	height:934px;
+}
+
+#typing_gif:hover{
+	cursor:pointer; 
+}
+
+#letter_board{
+	width:1400px;
+	height:934px;
+	border-radius:8px;
+	border:2px solid gray; 
+	position: relative;
+}
+
+#bubble_dummylayer{
+	position: absolute;
+	z-index:100;
+}
+
+#bubble_layer{
+	position: relative;
+	width:1400px;
+	height:700px;
+}
+
+#letter_body{
+	position: absolute;
+	width:800px;
+	height:600px;
+	left:400px;
+	top:150px;
+}
+
+#inputbeauty_image{
+   position: absolute;
+   left:400px;
+   bottom:30px;
+   width:800px;
+   height:51px;
+}
+
+#letter_input{
+	position:absolute;
+	left:400px;
+	width:800px;
+	bottom:70px;
+}
+
+#quittypingbtn{
+	position:absolute;
+	right:60px;
+	bottom:82px;
+}
